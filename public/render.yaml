@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: php-proxy
-    env: php
-    plan: free
-    buildCommand: ""
-    startCommand: ""
-    rootDir: public
