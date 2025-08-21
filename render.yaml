@@ -1,8 +1,8 @@
 services:
   - type: web
     name: php-proxy
-    env: php
+    env: docker
     plan: free
-    buildCommand: ""
-    startCommand: ""
-    rootDir: public
+    repo: https://github.com/ratulxhasan/phpproxy/blob/main/Dockerfile
+    branch: main
+    autoDeploy: true
