@@ -7,10 +7,12 @@ if (!$url) {
 }
 
 $headers = [
-    "Referer: https://test-streams.mux.dev",
-    "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+  "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+  "Referer: https://test-streams.mux.dev",
+  "Origin: https://test-streams.mux.dev",
+  "Accept: */*",
+  "Connection: keep-alive"
 ];
-
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
